@@ -6,12 +6,12 @@ require_once($config_path);
 
 $config = new JConfig();
 
-$usersname = $config->user;
-$passworld = $config->passworld;
-$databases = $config->db;
+$username = $config->user;
+$password = $config->password;
+$database = $config->db;
 $timestamp = time();
 
-$command = "mysqldump -u {$usersname} -p {$databases} > {$databases}-{$timestamp}.sql";
+$command = "mysqldump -u {$username} -p {$database} > {$database}-{$timestamp}.sql";
 
 echo "\n\n---\n\n";
 echo "command is here!";
@@ -20,6 +20,6 @@ echo $command;
 echo "\n\n---\n\n";
 echo "passworld here";
 echo "\n\n---\n\n";
-echo $passworld;
+echo $password;
 echo "\n\n---\n\n";
 system($command);
