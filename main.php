@@ -14,6 +14,12 @@ $timestamp = time();
 $command = "mysqldump -u {$usersname} -p {$databases} > {$databases}-{$timestamp}.sql";
 
 echo "\n\n---\n\n";
+echo "command is here!";
+echo "\n\n---\n\n";
 echo $command;
+echo "\n\n---\n\n";
+echo "passworld here";
+echo "\n\n---\n\n";
+echo $passworld;
 echo "\n\n---\n\n";
 system($command);
