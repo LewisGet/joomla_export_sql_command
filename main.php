@@ -11,4 +11,4 @@ $passworld = $config->passworld;
 $databases = $config->db;
 $timestamp = time();
 
-echo "mysqldump -u {$usersname} -p {$databases} > {$databases}-{$timestamp}.sql"
+echo "mysqldump -u {$usersname} -p {$databases} > {$databases}-{$timestamp}.sql";
