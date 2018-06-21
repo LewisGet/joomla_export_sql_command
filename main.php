@@ -16,4 +16,4 @@ $command = "mysqldump -u {$usersname} -p {$databases} > {$databases}-{$timestamp
 echo "\n\n---\n\n";
 echo $command;
 echo "\n\n---\n\n";
-cmd($command);
+system($command);
